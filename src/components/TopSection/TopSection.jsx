@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 import './TopSection.css'
+import Image from 'next/image'
 
 function TopSection({ title, text, image, className, projectPage }) {
     
@@ -16,7 +17,7 @@ function TopSection({ title, text, image, className, projectPage }) {
                     <Grid item xs={3} md={8} />
                 </Grid>
             </div>
-            <img src={image} alt="" />
+            <Image src={image} alt="" />
         </div>
     )
 }

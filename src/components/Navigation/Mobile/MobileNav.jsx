@@ -7,9 +7,10 @@ import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { navData } from '../navData';
-import { Link } from 'react-router-dom';
-import FadeIn from 'react-fade-in';
+// import FadeIn from 'react-fade-in';
 import logo from '../../../assets/images/logo.jpg'
+import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function TemporaryDrawer({ pathname }) {
@@ -36,13 +37,13 @@ export default function TemporaryDrawer({ pathname }) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
         <div className="mobile__title" style={{ fontWeight: 'bold', fontSize: '45px', textAlign: 'center', margin: '50px auto 70px auto' }}>
-        <img src={logo} alt="" style={{ width: '120px', height: '120px' }} />
+        <Image src={logo} alt="" style={{ width: '120px', height: '120px' }} />
         </div>
         <div className="mobile__linksContainer">
             <List>
-                <FadeIn delay="90">
+                {/* <FadeIn delay="90"> */}
                     {navData.map((item, i) => (
-                    <Link key={i} to={item.link} style={{ textDecoration: 'none', color: 'black' }}>
+                    <Link key={i} href={item.link} style={{ textDecoration: 'none', color: 'black' }}>
                         <ListItem 
                             button 
                             style={{ 
@@ -56,7 +57,7 @@ export default function TemporaryDrawer({ pathname }) {
                         </ListItem>
                     </Link>
                     ))}
-                </FadeIn>
+                {/* </FadeIn> */}
             </List>
         </div>
     </Box>

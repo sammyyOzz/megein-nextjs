@@ -7,6 +7,7 @@ import circle1 from '../../assets/icons/circle1.png'
 import circle2 from '../../assets/icons/circle2.png'
 import circle3 from '../../assets/icons/circle3.png'
 import circle4 from '../../assets/icons/circle4.png'
+import Image from 'next/image'
 
 
 function WhatWeDo() {
@@ -32,10 +33,10 @@ function WhatWeDo() {
                 </Grid>
                 <Grid item xs={1} md={1} lg={2} />
             </Grid>
-            <img src={circle1} alt="" className="whatWeDo__circle1" />
-            <img src={circle2} alt="" className="whatWeDo__circle2" />
-            <img src={circle3} alt="" className="whatWeDo__circle3" />
-            <img src={circle4} alt="" className="whatWeDo__circle4" />
+            <Image src={circle1} alt="" className="whatWeDo__circle1" />
+            <Image src={circle2} alt="" className="whatWeDo__circle2" />
+            <Image src={circle3} alt="" className="whatWeDo__circle3" />
+            <Image src={circle4} alt="" className="whatWeDo__circle4" />
         </section>
     )
 }
