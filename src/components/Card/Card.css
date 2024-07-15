@@ -1,0 +1,38 @@
+.card__image {
+    /* background-image: url('../../assets/images/card1.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.card__content {
+    padding-left: 25px;
+}
+
+.card__content > h1 {
+    margin: 0 0 50px 0;
+    color: #717171;
+    font-size: 35px;
+}
+
+.card__content > p {
+    margin: 0;
+    color: #202020;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@media(max-width: 600px) {
+    .card__image {
+        height: 250px;        
+    }
+
+    .card__content {
+        padding-left: 0;
+    }
+
+    .card__content > h1 {
+        margin: 20px 0 10px 0;
+    }
+}

@@ -1,0 +1,36 @@
+.project {
+    margin: 30px 20px;
+    box-shadow: 0 0 22px 5px gray;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.project > h2, .project > a {
+    color: #737373;
+    margin: 0 auto 0 0;
+    font-size: 30px;
+}
+
+.project > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project > h3 {
+    color: #737373;
+    /* font-size: 14px; */
+    font-weight: bold;
+    text-align: right;
+}
+
+.project > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 30px 0 40px 0;
+}
+
+.project > p {
+    color: #202020;
+    line-height: 23px;
+}

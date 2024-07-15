@@ -1,0 +1,22 @@
+.input {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #726e6e8a;
+    padding-left: 5px;
+    background-color: white;
+    z-index: 1;
+}
+
+.input:focus,
+.input__description:focus {
+    outline: none;
+    border: 2px solid #726E6E;
+}
+
+.input__description {
+    height: 90px;
+    width: 100%;
+    border: 2px solid #726e6e8a;
+    padding-top: 5px;
+    padding-left: 5px;
+}
