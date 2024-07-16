@@ -1,4 +1,4 @@
-import AboutPage from '@/pages/About/About'
+import AboutPage from '@/megein-pages/About/About'
 import React from 'react'
 
 function About() {

@@ -23,7 +23,11 @@ function Header() {
                 <div className="header__right">
                     {
                         navData.map((item, i) => (
-                            <Link key={i} exact href={item.link} activeClassName="header__activeLink">
+                            <Link 
+                                key={i} 
+                                href={item.link} 
+                                // activeClassName="header__activeLink"
+                            >
                                 { item.name }
                             </Link>
                         )) 

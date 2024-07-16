@@ -1,4 +1,4 @@
-import ProjectsPage from '@/pages/Projects/Projects'
+import ProjectsPage from '@/megein-pages/Projects/Projects'
 import React from 'react'
 
 function Projects() {
