@@ -1,5 +1,5 @@
 import React from 'react'
-import megeinVideo from '../../assets/videos/megein.mp4'
+import megeinVideo from '@/assets/videos/megein.mp4'
 
 function Video() {
   return (

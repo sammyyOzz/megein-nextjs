@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Fragment, lazy, Suspense } from 'react'
+import React, { Fragment, lazy, Suspense, useState } from 'react'
 import TopSection from '../../components/TopSection/TopSection'
 import projectsPageImage from '../../assets/images/projectsPage.png'
 import './Projects.css'
@@ -16,8 +16,7 @@ import women2 from '../../assets/images/women2.png'
 import { Grid } from '@mui/material'
 import Skeleton from '@mui/material/Skeleton';
 import Image from 'next/image';
-// import { useRouter } from 'next/router';
-// import { useParams } from 'next/navigation'
+import Video from '@/components/Video/Video';
 
 // const Video = lazy(() => import('../../components/Video/Video'));
 
@@ -35,12 +34,10 @@ const Loader = () => (
 
 
 function ProjectsPage() {
-    const page = 1
-    // const { page } = useParams()
-    // const router = useRouter()
+    const [page, setPage] = useState("1");
 
     const handleNav = (page) => {
-        // router.push(`/projects/${page}`)
+        setPage(page)
     }
 
     return (
@@ -173,9 +170,9 @@ function ProjectsPage() {
                 <Grid container className="projects">
                     <Grid item xs={1} md={3} />
                     <Grid item xs={10} md={6}>
-                        {/* <Suspense fallback={<Loader />}>
+                        <Suspense fallback={"Loading video..."}>
                             <Video />
-                        </Suspense> */}
+                        </Suspense>
                         
                     </Grid>
                     <Grid item xs={1} md={3} />
@@ -200,11 +197,11 @@ function ProjectsPage() {
             )}
 
             <div className="projects__nav-button-container">
-                { Array(7).fill().map((item, i) => (
+                { Array(7).fill(null).map((item, i) => (
                     <button 
                         key={i}
                         className={`projects__nav ${page === String(i + 1) && 'projects__nav-active' }`} 
-                        onClick={() => handleNav(i + 1)}>{ i + 1 }
+                        onClick={() => handleNav(String(i + 1))}>{ i + 1 }
                     </button>
                 ))}
             </div>
