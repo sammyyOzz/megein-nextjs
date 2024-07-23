@@ -19,7 +19,7 @@ function WhatWeDo() {
                 <Grid item xs={18} md={4} lg={3} className="whatWeDo__title">
                     <h1>WHAT WE DO ?</h1>
                 </Grid>
-                <Grid item container xs={14} md={11} lg={9} rowSpacing={12}>
+                <Grid item container xs={14} md={11} lg={6} rowSpacing={12} sx={{ paddingX: "20px" }}>
                     {
                         whatWeDoData.map((item, i) => (
                             <Card

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import { Link } from 'react-router-dom'
 import { navData } from '../Navigation/navData'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -9,7 +9,7 @@ function Footer() {
             <div className="footer__linksContainer">
                 {
                     navData.map((item, i) => (
-                        <Link to={item.link} key={i}>
+                        <Link href={item.link} key={i}>
                             { item.name }
                         </Link>
                     ))
