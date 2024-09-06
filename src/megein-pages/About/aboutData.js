@@ -16,7 +16,7 @@ export const advisoryBoard = [
 
 export const boardOfDirectors = [
     {
-        name: "Assoc. Prof. Nkem Fab-Ukozor",
+        name: "Prof. Nkem Fab-Ukozor",
         role: "-(F) Director/Founder"
     },
     {
@@ -39,7 +39,7 @@ export const boardOfDirectors = [
 
 export const staff = [
     {
-        name: "Assoc. Prof. Nkem Fab-Ukozor",
+        name: "Prof. Nkem Fab-Ukozor",
         role: "-Project Director"
     },
     // {

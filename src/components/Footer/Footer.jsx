@@ -15,7 +15,7 @@ function Footer() {
                     ))
                 }
             </div>
-            <p>Copyright 2021 Media and Gender Enlightenment Initiative (MEGEIN). All Rights Reserved.</p>
+            <p>Copyright {new Date().getFullYear()} Media and Gender Enlightenment Initiative (MEGEIN). All Rights Reserved.</p>
             <p style={{ marginTop: '10px' }}>Powered by Trevlo Technologies Limited</p>
         </div>
     )
