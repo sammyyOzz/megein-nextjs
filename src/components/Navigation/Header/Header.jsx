@@ -15,11 +15,12 @@ function Header() {
     return (
         <header className="header">
             <div className="header__container">
-                <div className="header__left">
-                    {/* <img src={logo} alt="" /> */}
-                    <Image src={logo} alt="" />
-                    <span>MEGEIN</span>
-                </div>
+                <Link href="/" style={{ textDecoration: "none" }}>
+                    <div className="header__left" style={{ cursor: "pointer" }}>
+                        <Image src={logo} alt="" />
+                        <span>MEGEIN</span>
+                    </div>
+                </Link>
                 <div className="header__right">
                     {
                         navData.map((item, i) => (

@@ -20,6 +20,10 @@ export const boardOfDirectors = [
         role: "-(F) Director/Founder"
     },
     {
+        name: "Mr. Kenechukwu Fab-Ukozor",
+        role: "-(M) Public Relations Officer"
+    },
+    {
         name: "Prof. I.C. Okonkwo",
         role: "-(M)"
     },
@@ -41,6 +45,10 @@ export const staff = [
     {
         name: "Prof. Nkem Fab-Ukozor",
         role: "-Project Director"
+    },
+    {
+        name: "Mr. Kenechukwu Fab-Ukozor",
+        role: "-(M) Public Relations Officer"
     },
     // {
     //     name: "Dr. Levi Chinaka Nwodu ",
