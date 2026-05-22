@@ -196,8 +196,16 @@ function ProjectsPage() {
                 </>
             )}
 
+            { page === '8' && (
+                <>
+                    <h2 className="projects__title">Download: GMMP National Report (Nigeria)</h2>
+                    <p className="projects__text">You can download the full report as a PDF using the link below.</p>
+                    <p className="projects__text"><a href="/GMMP2025-NationalReport-Nigeria.pdf" download target="_blank" rel="noreferrer noopener">Download GMMP2025 National Report (PDF)</a></p>
+                </>
+            )}
+
             <div className="projects__nav-button-container">
-                { Array(7).fill(null).map((item, i) => (
+                { Array(8).fill(null).map((item, i) => (
                     <button 
                         key={i}
                         className={`projects__nav ${page === String(i + 1) && 'projects__nav-active' }`} 
